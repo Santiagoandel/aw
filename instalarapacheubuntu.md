@@ -13,4 +13,11 @@ Ir a la carpeta /etc/apache2/sites-available y alli editar el fichero con "nano 
     	DocumentRoot /var/www/example.com/public_html
 y lo mismo con el fichero test.com.conf en el que añadiremos los mismos parámetros pero sustituyendo example por test.
 
+El siguiente paso es habilatarlo con el comando "a2ensites example.com.conf" y lo mismo para test.com.conf, y resetearemos el servicio de apache con "service apache2 restart"
+
+Por ultimo iremos a la carpeta /etc y editaremos el fichero hosts donde introduciremos los siguientes parámetros;
+    10.0.2.15   	example.com
+    10.0.2.15   	test.com
+
+
 
